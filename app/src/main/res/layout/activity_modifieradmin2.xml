@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".adminespace.gestion_utilisateur.ajouteradmin">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modifier ces informations"
+        android:layout_margin="30dp"
+        android:textColor="@color/roz"
+        android:drawableLeft="@drawable/ic_person_add_black_24dp"
+        />
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:text="changer le nom "/>
+    <TextView
+        android:id="@+id/nommodifieradmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:hint="nom"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:text="changer le prenom "/>
+    <TextView
+        android:id="@+id/prenommodifieradmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:hint="prenom"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:text="changer l'email electronique "/>
+    <TextView
+        android:id="@+id/emailmodifieradmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:hint="email"/>
+
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="changer mot de pass "/>
+
+       <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordmodifieradmintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="ajouter un mot de pass bien structuré"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordmodifieradmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordmodifieradmintxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" Réecrire le mot de pass"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordmodifieradmin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_error"
+        android:text="un message va envoyer a  l'email contient ce mot de pass"/>
+    <Button
+        android:id="@+id/modifieruseradmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:text="MODIFIER"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>
+</ScrollView>

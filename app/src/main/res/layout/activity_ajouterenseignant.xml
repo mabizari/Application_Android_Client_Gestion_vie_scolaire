@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".adminespace.gestion_utilisateur.ajouterenseignant">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="  pour ajouter un enseignant "
+    android:layout_margin="30dp"
+    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+    android:textColor="@color/roz"
+    />
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_uniqueenseignanttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  id unique"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_uniqueenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomajouterenseignanttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Nom"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nomajouterenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+               <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prenomajouterenseignanttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Prenom"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prenomajouterenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_people_black_24dp"
+        android:text=" gender "/>
+ <RadioGroup
+     android:id="@+id/geder"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/masculin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+         android:text="masculin"/>
+
+     <RadioButton
+         android:id="@+id/feminin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="feminin"/>
+
+
+</RadioGroup>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telephoneajouterenseignanttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Telephone"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telephoneajouterenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressajouterenseignanttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Adresse"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressajouterenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailajouterenseignantext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Email éléctronique"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailajouterenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/dateajouterenseignatn"
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:text="clicker ici pour choisir date rejoine"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ajouteruserenseignant"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:text="ajouter"
+      android:layout_marginTop="30dp"
+        android:textColor="@color/md_white_1000" />
+    <TextView
+        android:id="@+id/passwdgenenseign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/md_red_A700"/>
+
+</LinearLayout>
+
+</ScrollView>

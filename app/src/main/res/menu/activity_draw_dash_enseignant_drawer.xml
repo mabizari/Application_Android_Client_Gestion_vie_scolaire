@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_absence_enseignant"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="absence" />
+        <item
+            android:id="@+id/nav_notification_enseignant"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="notification" />
+        <item
+            android:id="@+id/nav_resultas_enseignant"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="resultas" />
+        <item
+            android:id="@+id/nav_document_enseignant"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="documents" />
+    </group>
+
+    <item android:title="contact">
+        <menu>
+            <item
+                android:id="@+id/nav_setting_enseignant"
+                android:icon="@drawable/ic_setting_black_24dp"
+                android:title="setting" />
+            <item
+                android:id="@+id/nav_email_enseignant"
+                android:icon="@drawable/ic_mail_black_24dp"
+                android:title="email" />
+            <item
+                android:id="@+id/nav_logout_enseignant"
+                android:icon="@drawable/ic_lock_open_black_24dp"
+                android:title="logout" />
+        </menu>
+    </item>
+
+</menu>

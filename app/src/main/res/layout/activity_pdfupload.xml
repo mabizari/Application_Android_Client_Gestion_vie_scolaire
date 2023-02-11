@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".etudiantespace.document.pdfupload">
+  <TextView
+        android:drawableLeft="@drawable/ic_picture_as_pdf_black_24dp"
+        android:background="@color/md_white_1000"
+        android:id="@+id/textpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="pdf" />
+
+    <ImageView
+        android:id="@+id/previewcetimage"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <Button
+        android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+        android:id="@+id/choosepdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="choose a pdf file" />
+
+  <EditText
+      android:id="@+id/edtpdfname"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="le nom de ce fichier"
+      android:drawableLeft="@drawable/ic_picture_as_pdf_black_24dp"/>
+
+    <Button
+        android:id="@+id/uploadpdf"
+        android:layout_width="309dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/md_blue_A100"
+        android:drawableLeft="@drawable/ic_public_black_24dp"
+        android:text="upload" />
+
+    <ImageView
+        android:layout_width="226dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo_est_mekn_s" />
+</LinearLayout>

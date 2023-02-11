@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminespace.gestion_utilisateur.ajouteradmin">
+    <ImageView
+        android:id="@+id/profile_image_etudiantsetting"
+        android:layout_gravity="center"
+        android:background="@drawable/logo_est_mekn_s"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+
+            android:text="id unique "/>
+
+        <TextView
+            android:id="@+id/id_uniquemodifieretudiantsetting"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:hint="code massar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nom "
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nommodifieretudiantsetting"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+
+            android:hint="nom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prenom "
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/prenommodifieretudiantsetting"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:hint="prenom" />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="telephone"/>
+    <TextView
+        android:id="@+id/telephonemodifieretudiantsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="telephone"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address "/>
+    <TextView
+        android:id="@+id/addressmodifieretudiatsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="address"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modifier l'email electronique "/>
+    <TextView
+        android:id="@+id/emailmodifieradmin2setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="email"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="annee"/>
+
+    <Button
+        android:id="@+id/anneemodifieretudiantbtnsetting"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:text="annee"
+        android:textColor="@color/roz"
+        android:textSize="11sp" />
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="section"/>
+
+    <Button
+        android:id="@+id/sectionodifieretudiantbtnsetting"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:text="annee"
+        android:textColor="@color/roz"
+        android:textSize="11sp" />
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departement"/>
+
+        <Button
+            android:id="@+id/departementmodifieretudiantsetting"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1sp"
+            android:text="dept"
+            android:textColor="@color/roz"
+            android:textSize="11sp" />
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="semestre"/>
+
+        <Button
+            android:id="@+id/semestremodifieretudiantsetting"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1sp"
+            android:text="semestre"
+            android:textColor="@color/roz"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/modifieretudiant22setting"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:text="modifier"
+        android:textColor="@color/green" />
+
+
+
+</LinearLayout>

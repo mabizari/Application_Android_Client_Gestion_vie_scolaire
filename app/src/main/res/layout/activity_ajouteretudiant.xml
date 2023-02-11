@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".adminespace.gestion_utilisateur.ajouteretudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  pour ajouter un etudiant "
+            android:layout_margin="30dp"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:textColor="@color/roz"
+            />
+            <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_uniqueetudianttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  code massar"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_uniqueetudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomajouteretudianttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  nom"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nomajouteretudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prenomajouteretudianttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  prenom"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prenomajouteretudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_people_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" gender "/>
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/masculin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="masculin"/>
+
+            <RadioButton
+                android:id="@+id/feminin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feminin"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telephoneajouteretudianttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  telephone"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telephoneajouteretudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressajouteretudianttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  Adresse"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressajouteretudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:text="ajouter l'email electronique "/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailajouteretudianttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:layout_margin="4dp"
+            android:hint="  Email electronique"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailajouteretudiant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+                android:background="@color/md_white_1000"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choisir l'annee"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/anneeajouteretudiant"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:text="annee"
+        android:textColor="@color/roz"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+
+        android:text="choisir Departement"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/departementajouteretudiant"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:text="dept"
+        android:textColor="@color/roz"
+        android:textSize="11sp" />
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+            android:text="choisir semestre"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/semestreajouteretudiant"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1sp"
+            android:text="semestre"
+            android:textColor="@color/roz"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/passwdgen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/md_red_A700"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ajouteretudiant"
+        android:layout_width="138dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:text="ajouter"
+        android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</ScrollView>

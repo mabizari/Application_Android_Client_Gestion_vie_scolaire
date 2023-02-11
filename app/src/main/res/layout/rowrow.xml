@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<TextView
+    android:drawableLeft="@drawable/ic_face_black_24dp"
+    android:id="@+id/nomuser"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text=" Benabbi Saad"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:id="@+id/emailuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:text=" saad@gmail.com"/>
+
+</LinearLayout>

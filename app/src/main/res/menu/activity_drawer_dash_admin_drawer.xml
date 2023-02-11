@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gestion_users"
+            android:icon="@drawable/users_black_24dp"
+            android:title="gestion des utilisateurs" />
+        <item
+            android:id="@+id/nav_gestion_noticification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Gestion Noticification" />
+        <item
+            android:id="@+id/nav_gestion_emploi"
+            android:icon="@drawable/emploi_black_24dp"
+            android:title="Gestion des emploi" />
+        <item
+            android:id="@+id/nav_page_principale_admin"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Page Principale" />
+
+    </group>
+
+    <item android:title="Gestion Vie SColiare">
+        <menu>
+            <item
+                android:id="@+id/nav_logout_admin"
+                android:icon="@drawable/logout_black_24dp"
+                android:title="logout" />
+
+        </menu>
+    </item>
+
+</menu>

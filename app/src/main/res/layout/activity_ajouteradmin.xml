@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminespace.gestion_utilisateur.ajouteradmin">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="  pour ajouter un administrateur "
+    android:layout_margin="30dp"
+    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+    android:textColor="@color/roz"
+    />
+
+
+      <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nomajouteradmintxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:layout_margin="4dp"
+            android:hint=" Nom"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nomajouteradmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+                android:background="@color/md_white_1000"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prenomajouteradmintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" Prenom"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prenomajouteradmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailajouteradmintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" Email éléctronique"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailajouteradmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ajouter le mot de pass "/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordajouteradmintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="ajouter un mot de pass bien structuré"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordajouteradmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordajouteradmintxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" Réecrire le mot de pass"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordajouteradmin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/ajouteruseradmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+
+        android:text="Ajouter"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+
+</ScrollView>

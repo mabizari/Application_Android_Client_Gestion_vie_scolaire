@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_compte"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Recuperer votre compte" />
+        <item
+            android:id="@+id/nav_actualite"
+            android:icon="@drawable/ic_public_black_24dp"
+            android:title="Actualites" />
+        <item
+            android:id="@+id/nav_informations"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Informations" />
+
+    </group>
+
+    <item android:title="Authentification et contact">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_lock_open_black_24dp"
+                android:title="Authentification" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="contact" />
+        </menu>
+    </item>
+
+</menu>

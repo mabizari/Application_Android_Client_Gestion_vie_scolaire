@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enseignantespace.settingenseignant">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/motpassactuellenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mot de pass actuelle"/>
+        <EditText
+            android:id="@+id/nouveaumotpassenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nouveau mot de pass"/>
+
+        <Button
+            android:id="@+id/changermotpassenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="changer mot de pass"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

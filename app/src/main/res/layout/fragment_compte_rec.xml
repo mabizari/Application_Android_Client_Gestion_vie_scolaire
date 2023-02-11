@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/estlogo"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="cette fragment est utilisé\nsi vous avez oublier ton mot de pass \n tu peur le rénisialiser ou si tu veut recuperer ton \n email électronique educatif
+"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+    <LinearLayout
+        android:id="@+id/mainGrid"
+
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+
+
+
+
+
+            <LinearLayout
+
+                android:id="@+id/recuperer_etudiant_compte"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_face_black_24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:text=" recuperer etudiant  compte"
+                    android:textSize="18sp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardadmin"
+            android:layout_width="347dp"
+            android:layout_height="354dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:visibility="gone"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="88dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="si tu n'as pas email electroique tu peur recuperer en cliquant si desous"
+                    android:textColor="@color/md_red_700" />
+
+                <Button
+                    android:id="@+id/recupereremailelectroniqueetudiant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_blue_400"
+                    android:layout_margin="20dp"
+                    android:text="recuperer email electronique" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="entrer votre email electronique (edu)"
+                    android:textColor="@color/md_yellow_700" />
+
+                <EditText
+                    android:id="@+id/emailetudiantrec"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/geererunmotdepassetudiant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@color/md_blue_400"
+                    android:text="nouveau mot de pass" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+            <LinearLayout
+
+                android:id="@+id/recuperer_enseignant_compte"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_school_black_24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:text=" recuperer Enseignant compte"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down_white_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardenseignant"
+        android:layout_width="347dp"
+        android:visibility="gone"
+        android:layout_height="354dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="88dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="si tu n'as pas email electroique tu peur recuperer en cliquant si desous"
+                android:textColor="@color/md_red_700" />
+
+            <Button
+                android:id="@+id/recupereremailelectroniqueenseignant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_blue_400"
+                android:layout_margin="20dp"
+                android:text="recuperer email electronique" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="entrer votre email electronique (edu)"
+                android:textColor="@color/md_yellow_700" />
+
+            <EditText
+                android:id="@+id/emailenseigantrec"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/geererunmotdepassenseignant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/md_blue_400"
+                android:text="nouveau mot de pass" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+
+
+            android:id="@+id/contacteradministrateur"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_mail_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text=" Contacter admininstration"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>

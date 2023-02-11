@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".enseignantespace.gestion_documents.insertdocument">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/estlogo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="30dp"
+        android:text="cette fragment est utilisé pour uploader le document"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_face_black_24dp"
+        android:text="nom d'enseignant"/>
+    <TextView
+        android:id="@+id/documentenseignantprofname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="prof"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:text="nom du module"/>
+    <TextView
+        android:id="@+id/documentenseignantmodule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="module"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomdocumenttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" titre du cours "
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nomdocumentenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTexttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint="  nom de fichier "
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextdocumentenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cloud_upload_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:text="Select PDF TO Upload"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttonselectenseignant"
+    android:layout_above="@+id/editText"
+    android:layout_alignParentStart="true"
+    />
+
+    <Button
+        android:text="Upload pdf on online server"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2uploadenseignant"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+</ScrollView>

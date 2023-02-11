@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     tools:context=".enseignantespace.gestion_documents.documentsenseignants"
+   >
+
+    <TextView
+        android:id="@+id/documenttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:background="@color/colorPrimaryDark"
+        android:text="documents"
+        android:drawableLeft="@drawable/ic_pdf_box"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+    <ProgressBar
+        android:id="@+id/documentenseignantprogressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+android:id="@+id/swiperefreshenseignantdocument"
+      android:layout_weight="0.5"
+        android:numColumns="auto_fit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+    <GridView
+        android:id="@+id/documentenseignantgridview"
+        android:layout_weight="0.5"
+        android:numColumns="auto_fit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </GridView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<Button
+    android:id="@+id/documentenseignantdownloadbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ajouter"/>
+</LinearLayout>

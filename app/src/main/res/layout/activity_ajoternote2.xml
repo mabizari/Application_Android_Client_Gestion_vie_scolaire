@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".enseignantespace.gestion_notes.ajoternote2">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/logo_est"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text=" nom et prenom "
+        android:drawableLeft="@drawable/ic_update_black_24dp"
+        android:textColor="@color/md_white_1000"
+
+        />
+    <TextView
+        android:id="@+id/nomajouternote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="nom complet"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:drawableLeft="@drawable/ic_update_black_24dp"
+        android:text=" module:"
+
+       />
+        <TextView
+            android:id="@+id/moduleajouternote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  module:"
+            />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:drawableLeft="@drawable/ic_update_black_24dp"
+        android:text=" Note:"
+
+     />
+        <TextView
+            android:id="@+id/noteajo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:textColor="@color/md_black_1000"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:text=" "
+
+            />
+     <EditText
+         android:id="@+id/edit_text"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="ajouter une note"/>
+
+</LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ajouter"
+    android:background="@color/green_complete"
+    android:id="@+id/ajouternote"/>
+
+</LinearLayout>

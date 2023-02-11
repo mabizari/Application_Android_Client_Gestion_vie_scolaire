@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="uploadImages">
+        <item>gallery</item>
+        <item>supprimer limage</item>
+    </string-array>
+
+    <string-array name="itemIds">
+        <item>gallery_image</item>
+        <item>remove_image</item>
+    </string-array>
+
+
+        <string-array name="emplois_array">
+            <item>Gi semestre 1 section A</item>
+            <item>GI semestre 1 section B</item>
+            <item>GI semestre 2 section A </item>
+            <item>GI semestre 2 section B</item>
+            <item>gi semestre 3 section A</item>
+            <item>GI semestre 3 section B</item>
+            <item>GI Semestre 4 isr</item>
+            <item>GI semestre 4 GL</item>
+            <item>GI semestre  5</item>
+            <item>GI semestre 6</item>
+        </string-array>
+    <string-array name="modules">
+        <item>mathematiques generales</item>
+        <item>algorithmique et bases de programmation c</item>
+        <item>langages et technique d expression et de communication </item>
+        <item>architecture des ordinateurs</item>
+        <item>system dinformation et bases de donnees</item>
+        <item>algorithmique et structures des donnes</item>
+        <item>systeme dexploitation and reseaux</item>
+        <item>environnement economique et juridique de lentreprise</item>
+        <item>interconnexion des reseaux</item>
+        <item>base de donnnes avancees</item>
+        <item>programmation orientees object java</item>
+        <item>outils daide a la decision</item>
+        <item>atelier genie logiciel</item>
+        <item>claud computing securite</item>
+        <item>administration services reseau</item>
+        <item>projet de fin detude</item>
+        <item>stage</item>
+    </string-array>
+
+
+</resources>

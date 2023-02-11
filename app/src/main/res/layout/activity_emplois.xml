@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".etudiantespace.emplois.emplois">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/titreemploi1"
+                android:drawableLeft="@drawable/ic_save_black_24dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/md_white_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_settings_backup_restore_black_24dp"
+                android:text=" titre"
+
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/sectionemploi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="section"
+                android:textSize="30sp" />
+
+            <uk.co.senab.photoview.PhotoView
+                android:id="@+id/emploi1"
+                android:background="@color/md_white_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

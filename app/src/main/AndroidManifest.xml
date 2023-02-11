@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zerophi.gestionvie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/back_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".info"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login.login" />
+        <activity android:name=".login.etudiantLogin" />
+        <activity android:name=".login.enseignantLogin" />
+        <activity android:name=".adminespace.dashAdmin" />
+        <activity android:name=".enseignantespace.dash_enseignant" />
+        <activity
+            android:name=".etudiantespace.dash_etudiant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adminespace.result" />
+        <activity
+            android:name=".adminespace.resultas"
+            android:label="@string/title_activity_resultas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".adminespace.resultss" />
+        <activity android:name=".help.ActionTabActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".help.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".help.basicmapactivity" />
+        <activity android:name=".etudiantespace.nocification.nocification" />
+        <activity android:name=".etudiantespace.nocification.nocification_detail" />
+        <activity android:name=".adminespace.gestion_noticification.noticificationgestion" />
+        <activity android:name=".etudiantespace.emploi.emploi" />
+        <activity android:name=".etudiantespace.emploitemp.emptemp" />
+        <activity android:name=".adminespace.gestion_utilisateur.useradmin" />
+        <activity android:name=".adminespace.gestion_utilisateur.admingestion" />
+        <activity android:name=".adminespace.gestion_utilisateur.enseignantgestion" />
+        <activity android:name=".adminespace.gestion_utilisateur.ajouteradmin" />
+        <activity android:name=".adminespace.gestion_utilisateur.etudiantgestion" />
+        <activity android:name=".adminespace.gestion_utilisateur.ajouterenseignant" />
+        <activity android:name=".adminespace.gestion_utilisateur.ajouteretudiant" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifieradmin" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifierenseignant" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifieretudiant" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifieradmin2" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifieretudiant2" />
+        <activity android:name=".adminespace.gestion_utilisateur.modifierenseignant2" />
+        <activity android:name=".enseignantespace.gestion_absence.gestion_absence" />
+        <activity android:name=".enseignantespace.gestion_notes.gestion_notes" />
+        <activity android:name=".enseignantespace.gestion_notes.ajouternote" />
+        <activity android:name=".enseignantespace.gestion_notes.ajoternote2" />
+        <activity android:name=".enseignantespace.gestion_notes.modules" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteadmin" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteadmin2" />
+        <activity android:name=".etudiantespace.emplois.emplois" />
+        <activity android:name=".etudiantespace.emplois.emplois2" />
+        <activity android:name=".etudiantespace.resultas.notes" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteenseignant" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteetudiant" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteetudiant2" />
+        <activity android:name=".adminespace.gestion_utilisateur.deleteenseignant2" />
+        <activity android:name=".etudiantespace.emplois.emploitemp.gestionemploi2" />
+        <activity android:name=".enseignantespace.gestion_absence.abcensecl" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".fragment.recetudiant" />
+        <activity android:name=".fragment.recenseignant" />
+        <activity android:name=".fragment.siteetudiant" />
+        <activity android:name=".fragment.siteenseignant" />
+        <activity android:name=".fragment.compte_rec" />
+        <activity android:name=".etudiantespace.settingetudiant" />
+        <activity android:name=".etudiantespace.absence.absenceetudiant" />
+        <activity android:name=".enseignantespace.settingenseignant" />
+        <activity android:name=".adminespace.uploadx_x.Main3Activity" />
+        <activity android:name=".adminespace.uploadx_x.uploadx" />
+        <activity
+            android:name=".adminespace.drawerDashAdmin"
+            android:label="@string/title_activity_drawer_dash_admin"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".etudiantespace.drawerDashEtudiant"
+            android:label="@string/title_activity_drawer_dash_etudiant"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".enseignantespace.drawDashEnseignant"
+            android:label="@string/title_activity_draw_dash_enseignant"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".adminespace.gestion_utilisateur.modulesenseignant" />
+        <activity android:name=".etudiantespace.settingetudiant2" />
+        <activity android:name=".etudiantespace.emplois.EmploiNew" />
+        <activity android:name=".adminespace.gestion_utilisateur.modulesenseignant2" />
+        <activity android:name=".adminespace.gestion_utilisateur.deletemodulesenseignant" />
+        <activity android:name=".enseignantespace.gestion_notes.modules2" />
+        <activity android:name=".etudiantespace.document.documentgrid" />
+        <activity android:name=".etudiantespace.document.pdfdoc" />
+        <activity android:name=".etudiantespace.document.pdfupload" />
+        <activity android:name=".etudiantespace.document.uploadpdf3" />
+        <activity android:name=".enseignantespace.gestion_documents.documentmodules" />
+        <activity android:name=".enseignantespace.gestion_documents.documentsenseignants" />
+        <activity android:name=".enseignantespace.gestion_documents.insertdocument" />
+        <activity android:name=".adminespace.gestion_noticification.notification_admin" />
+        <activity android:name=".adminespace.gestion_noticification.nocification_detail" />
+        <activity android:name=".enseignantespace.gestion_nocification.notification_enseignant" />
+        <activity android:name=".enseignantespace.gestion_nocification.notification_enseignantdetail" />
+        <activity android:name=".enseignantespace.gestion_nocification.notification_enseignant_modules" />
+        <activity android:name=".enseignantespace.gestion_nocification.insertnotificationenseignant" />
+        <activity android:name=".adminespace.gestion_noticification.deletenotificationadmin" />
+        <activity android:name=".etudiantespace.documents.documentsetudiantmodules" />
+        <activity android:name=".etudiantespace.documents.enseignantsetudiant" />
+        <activity android:name=".etudiantespace.documents.documentsetudiantfin" />
+        <activity android:name=".etudiantespace.notificationenseignant.notificationenseignantetudiant" />
+        <activity android:name=".etudiantespace.notificationenseignant.notificationenseignantetudiantmodule" />
+        <activity android:name=".etudiantespace.notificationenseignant.notificationetudiantfin" />
+        <activity android:name=".adminespace.settingadmin"></activity>
+    </application>
+
+</manifest>

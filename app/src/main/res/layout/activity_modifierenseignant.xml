@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminespace.gestion_utilisateur.modifierenseignant">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=" Les Enseignants  "
+          android:textColor="@color/roz"
+          android:drawableLeft="@drawable/ic_face_black_24dp"
+  />
+
+      <Button
+          android:id="@+id/btnsyncnenseignant"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:visibility="gone"
+          android:text="sync" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+      />
+   </LinearLayout>
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/refreshmodifierenseignant"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   <ListView
+       android:id="@+id/enseignantlistview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></ListView>
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

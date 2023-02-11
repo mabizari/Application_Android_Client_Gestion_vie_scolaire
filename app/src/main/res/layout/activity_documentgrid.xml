@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".etudiantespace.document.documentgrid">
+
+    <TextView
+        android:id="@+id/documenttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pdf documents"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+    <ProgressBar
+        android:id="@+id/documentprogressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+      android:layout_weight="0.5"
+        android:numColumns="auto_fit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+    <GridView
+        android:id="@+id/documentgridview"
+        android:layout_weight="0.5"
+        android:numColumns="auto_fit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </GridView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<Button
+    android:id="@+id/documentdownloadbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Download"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".etudiantespace.notificationenseignant.twonotification">
+
+    <!-- TODO: Update blank fragment layout -->
+ <Button
+     android:id="@+id/notiadmin"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="@color/md_white_1000"
+     android:text="notification admin"/>
+    <Button
+        android:id="@+id/notienseignant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:text="notification enseignant"/>
+
+</LinearLayout>

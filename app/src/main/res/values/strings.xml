@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">GestionVie</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="admin">responsable de filiere</string>
+    <string name="etudiant">un etudiant</string>
+    <string name="enseignant">un enseignant</string>
+    <string name="help">info sur le projet et lecole</string>
+    <string name="title_activity_info">info</string>
+    <string name="adminlogintitle">admin login </string>
+    <string name="enseignantlogintitle">enseignant login </string>
+    <string name="etudiantlogintitle">etudiant login </string>
+
+    <string name="title_activity_dashboardlogin">Dashboardlogin</string>
+    <string name="connected">si tu veut rester connecter</string>
+    <string name="exit">est ce que tu est sure que vous voullez quitez lapp</string>
+
+
+    //dash_admin
+    <string name="logoutadmin">log out</string>
+    <string name="resultat">resultat</string>
+    <string name="absence">absence</string>
+    <string name="gestionusers">users</string>
+    <string name="title_activity_resultas">resultas</string>
+    <string name="gestion_nocification">notification</string>
+
+    //dash_etudiant
+
+    <string name="documents"> documents </string>
+    <string name="nocificationetud">nocification</string>
+    <string name="resultasetud">resultas</string>
+    <string name="examsetud">exams </string>
+    <string name="absenceetud"> absence</string>
+
+    //dash_enseignant
+    <string name="etudiantsensei">etudiants</string>
+    <string name="coursensei">cours</string>
+    <string name="nocificationensei">nocification</string>
+    <string name="resultasensei">resultas</string>
+    <string name="absencesensei">absence</string>
+    <string name="email">email</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    //nocification
+    <string name="ajouternocification">AJOUTER NOCIFICATION</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">ovrir le tiroir de navigation </string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="nav_header_title">EST MEKNES</string>
+    <string name="nav_header_subtitle">Ecole superieure de Technologie GI</string>
+    <string name="nav_header_desc">tete</string>
+    <string name="action_settings">Réglages</string>
+    <string name="title_activity_login">identifier</string>
+    <string name="msg_loading">Loading...</string>
+
+    //url
+    <string name="urlestm">https://gestionviescolaire.000webhostapp.com/est.html</string>
+
+
+    <string name="action_setting_admin">setting administrateur</string>
+    <string name="action_logout_admin">logout </string>
+
+    <string name="title_activity_drawer_dash_admin">drawerDashAdmin</string>
+
+    <string name="aucun_connection"> tu nas pas connecter a internet !! </string>
+    <string name="title_activity_drawer_dash_etudiant">drawerDashEtudiant</string>
+    <string name="title_activity_draw_dash_enseignant">drawDashEnseignant</string>
+
+</resources>

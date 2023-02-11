@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".enseignantespace.gestion_nocification.insertnotificationenseignant">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:drawableLeft="@drawable/ic_notifications_active_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ajouternocification"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/md_white_1000"
+            />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/estlogo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="30dp"
+        android:text="cette fragment est utilisé pour ajouter nouveau notification"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_face_black_24dp"
+        android:text="nom d'enseignant"/>
+    <TextView
+        android:id="@+id/notificationenseignantprofname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="prof"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:text="nom du module"/>
+    <TextView
+        android:id="@+id/notificationenseignantmodule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="module"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/voirnotificationenseignant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/md_white_1000"
+        android:text="voir tous les notification "/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/noticenseignant_titretxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:layout_margin="4dp"
+        android:hint=" Titre de nocification"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/noticenseignant_titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:background="@color/md_white_1000"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/noticenseignant_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Description"
+        />
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnajouternotificationenseignant"
+       android:background="@color/green_complete"
+        android:drawableLeft="@drawable/ic_setting_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="ajouter" />
+
+</LinearLayout>
+</ScrollView>

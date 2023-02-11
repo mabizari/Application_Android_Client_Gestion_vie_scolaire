@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.recenseignant">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardenseignant"
+        android:layout_width="347dp"
+        android:layout_height="354dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="88dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="si tu n'as pas email electroique tu peur recuperer en cliquant si desous"
+                android:textColor="@color/md_red_700" />
+
+            <Button
+                android:id="@+id/recupereremailelectroniqueenseignant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_blue_400"
+                android:layout_margin="20dp"
+                android:text="recuperer email electronique" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="entrer votre email electronique (edu)"
+                android:textColor="@color/md_yellow_700" />
+
+            <EditText
+                android:id="@+id/emailenseigantrec"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/geererunmotdepassenseignant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/md_blue_400"
+                android:text="nouveau mot de pass" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

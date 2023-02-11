@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".etudiantespace.settingetudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/ic_security_black_24dp"
+            android:layout_marginBottom="30dp"/>
+        <EditText
+            android:id="@+id/motpassactuelletudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mot de pass actuelle"/>
+        <EditText
+            android:id="@+id/nouveaumotpassetudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nouveau mot de pass"/>
+
+        <Button
+            android:id="@+id/changermotpassetudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="changer mot de pass"/>
+        <Button
+            android:id="@+id/informationsetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier les autre informations"/>
+    </LinearLayout>
+
+</ScrollView>

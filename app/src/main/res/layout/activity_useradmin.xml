@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminespace.gestion_utilisateur.useradmin">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="30dp"
+          android:background="@drawable/logo_est_mekn_s"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginBottom="40dp"
+          android:text="Cette fragment est utilisé  pour ajouter , modifier ,supprimer un administrateur , un enseignant , ou  un étudiant  "/>
+
+    <TextView
+        android:id="@+id/admingestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginStart="8dp"
+        android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+        android:layout_marginEnd="8dp"
+        android:text=" L'administrateur"/>
+    <LinearLayout
+        android:id="@+id/admingestionlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:visibility="gone"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/ajouteruseradmin"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ajouter"/>
+
+    <Button
+        android:id="@+id/modifieruseradmin"
+        android:background="@color/md_yellow_700"
+         android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFIER"/>
+    <Button
+        android:id="@+id/supprimeruseradmin"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="supprimer"/>
+</LinearLayout>
+<TextView
+    android:id="@+id/enseignantuser"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+    android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:textColor="@color/md_white_1000"
+    android:text=" enseignant"/>
+      <LinearLayout
+          android:id="@+id/enseignantgestion"
+          android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/ajouteruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ajouter"/>
+
+    <Button
+        android:id="@+id/modifieruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFIER"/>
+    <Button
+        android:id="@+id/supprimeruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="supprimer"/>
+    <Button
+        android:id="@+id/choisirmodulesenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="choisir les  modules"/>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/etudiantuser"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+        android:layout_height="wrap_content"
+        android:text=" etudiant"/>
+      <LinearLayout
+          android:id="@+id/etudiantgestion"
+    android:layout_width="match_parent"
+          android:visibility="gone"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ajouteruseretudiant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ajouter"/>
+
+    <Button
+        android:id="@+id/modifieruseretudiant"
+        android:background="@color/md_yellow_700"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFIER"/>
+    <Button
+        android:id="@+id/supprimeruseretudiant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="supprimer"/>
+      </LinearLayout>
+    <com.androidnetworking.widget.ANImageView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+ android:id="@+id/adimage"/>
+</LinearLayout>
+    </ScrollView>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminespace.settingadmin">
+<TextView
+
+        android:textSize="15sp"
+     android:layout_marginBottom="10dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+     android:layout_marginTop="14dp"
+        android:text="Changer ton mot de pass "/>
+   <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       android:background="@color/md_white_1000"
+                    android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+            android:hint=" le Mot de pass recent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recmotpassadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                  android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+                android:background="@color/md_white_1000"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+                  android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp"
+            android:hint="le nouveau mot de pas"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nvmotpassadmin"
+                android:layout_width="match_parent"
+                android:background="@color/md_white_1000"
+                android:layout_height="wrap_content"
+                  android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                 android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+             android:background="@color/md_white_1000"
+            android:hint="reacrire une autre fois"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nvmotpass2admin"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:background="@color/md_white_1000"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnchangermotdepassadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:text="changer mot de pass" />
+</LinearLayout>

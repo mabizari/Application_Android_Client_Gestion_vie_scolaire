@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminespace.gestion_utilisateur.deleteetudiant2"
+    android:orientation="vertical">
+ <ImageView
+        android:layout_width="102dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_delete_forever_black_24dp" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_marginTop="5dp"
+    android:text="il resemble que tu vas supprimer cet utilisateur \n est ce que tu est sure ce que tu vas faire !!"/>
+    <TextView
+        android:id="@+id/nomdeleteetudiant2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nom"
+        android:drawableLeft="@drawable/ic_face_black_24dp"
+        />
+     <TextView
+        android:id="@+id/emaildeleteetudiant2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" saad@gmail.com"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/btndeleteetudiant2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="supprimerr"/>
+
+</LinearLayout>

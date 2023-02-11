@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+   android:orientation="vertical" >
+    <TextView
+        android:id="@+id/prompttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+        android:text="pour modifier"/>
+
+
+    <EditText
+        android:id="@+id/promptedt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <requestFocus />
+    </EditText>
+
+
+</LinearLayout>

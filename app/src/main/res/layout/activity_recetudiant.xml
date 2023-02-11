@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.recetudiant">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/md_red_900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="entrer votre email electronique (edu)"/>
+<EditText
+    android:id="@+id/emailetudiantrec"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/geererunmotdepassetudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="generer un autre mot de pass"
+            />
+        <TextView
+            android:textColor="@color/md_red_900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="si tu n'as pas email electroique tu peur recuperer a travers
+ce site "/>
+        <Button
+            android:id="@+id/recupereremailelectroniqueetudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="recuperer email electronique"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

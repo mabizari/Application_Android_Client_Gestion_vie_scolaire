@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".etudiantespace.acceuiletudiant">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_close_white_24dp"
+        android:textColor="@color/md_white_1000"
+        android:background="@color/colorPrimaryDark"
+        android:text="Acceuil etudiant" />
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/estlogo"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Bonjour cher etudiant " />
+    <TextView
+        android:id="@+id/acceuil_info_etudiant_nom"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Benabbi Saad " />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Votre email electronique " />
+    <TextView
+        android:id="@+id/acceuil_info_etudiant_email"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Benabbi Saad " />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Votre departement " />
+    <TextView
+        android:id="@+id/acceuil_info_etudiant_departement"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Benabbi Saad " />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Votre semestre " />
+    <TextView
+        android:id="@+id/acceuil_info_etudiant_semestre"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Benabbi Saad " />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/md_white_1000"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Votre section " />
+    <TextView
+        android:id="@+id/acceuil_info_etudiant_section"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Benabbi Saad " />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text=""/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".adminespace.gestion_utilisateur.ajouteradmin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modifier ces informations"
+        android:layout_margin="30dp"
+        android:textColor="@color/roz"
+        android:drawableLeft="@drawable/ic_person_add_black_24dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+
+            android:text="id unique "/>
+        <TextView
+            android:id="@+id/id_uniquemodifierenseignant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="id unique"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nom "
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nommodifierenseignant"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+
+            android:hint="nom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prenom "
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/prenommodifierenseignant"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:hint="prenom" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gender "/>
+        <RadioGroup
+            android:id="@+id/geder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/masculin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="masculin"/>
+
+            <RadioButton
+                android:id="@+id/feminin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feminin"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="telephone"/>
+    <TextView
+        android:id="@+id/telephonemodifierenseignant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:inputType="phone"
+        android:hint="telephone"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address "/>
+    <TextView
+        android:id="@+id/addressmodifierenseignant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:hint="adress"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_developer_mode_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modifier l'email electronique "/>
+    <TextView
+        android:id="@+id/emailmodifierenseignant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        android:hint="email "/>
+
+
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clicker sur selecte pour modifier date rejoine"/>
+    <TextView
+        android:id="@+id/datemodifierenseignatn"
+        android:textColor="@color/roz"
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select"/>
+    <TextView
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="clicker pour modifier le module"/>
+
+    <Button
+        android:id="@+id/modulemodifiernseignant"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:text="module"
+        android:visibility="gone"
+        android:textColor="@color/roz"
+        android:textSize="11sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modifieruserenseignant"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_menu_send"
+        android:layout_marginLeft="180dp"
+        android:text="modifier"
+        android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</ScrollView>

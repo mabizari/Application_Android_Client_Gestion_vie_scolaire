@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".adminespace.gestion_utilisateur.admingestion">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_est_mekn_s"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/ajouteruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ajouter"/>
+
+    <Button
+        android:id="@+id/modifieruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFIER"/>
+    <Button
+        android:id="@+id/supprimeruserenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="supprimer"/>
+    <Button
+        android:id="@+id/choisirmodulesenseignant"
+        android:background="@color/md_yellow_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="choisir les  modules"/>
+
+</LinearLayout>
